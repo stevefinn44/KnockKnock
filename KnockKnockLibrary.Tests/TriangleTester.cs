@@ -17,7 +17,11 @@ namespace KnockKnockLibrary.Tests
         {
             //arange
             var triangleHelper = new TriangleHelper();
+
+            //act
             var result = triangleHelper.IsTriangle(a, b, c);
+
+            //assert
             Assert.False(result, "Triangle with a side equal to zero should be false");
 
 
